@@ -3,13 +3,32 @@ img {
 }
 table {
 	border-collapse: collapse;
-	border: 0px;
+	border: 1px solid black;
 	padding: 0px;
 	margin: 0px;
-	border-spacing: 0px 0px;
+	border-spacing: 0px 0px 0px 0px;
 }
 
 td {
-	border: 0px;
+	border: 1px solid black;
 	padding: 0px;
+	text-align: center;
+}
+.first-col, .last-col {
+	font-weight: bold;
+	width: 25px;
+}
+.last-col, th {
+	transform: rotate(180deg);
+}
+.last-line {
+	font-weight: bold;
+}
+th, .last-line {
+	height: 25px;
+	border: 1px solid black
+	border-left: 0px;
+}
+.last-line td {
+	border: 0px;
 }
